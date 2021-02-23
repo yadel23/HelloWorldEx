@@ -72,7 +72,7 @@ public class ProfileProcessor {
 					e.printStackTrace();
 					System.out.println("Error did not work :(");
 				}
-				System.out.println("your profile has been saved. Here is a cat:");
+				System.out.println("your profile has been saved. Here is a cat:)");
 				System.out.println(" /\\_/\\\n( o.o )\n > ^ <");
 				saveNQuit = false;
 
