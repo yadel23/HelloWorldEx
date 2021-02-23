@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -14,6 +15,7 @@ public class WordCount {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			System.exit(1);
+			System.out.println("Error, please fix!!!");
 		}
 
 		int i = 0;
