@@ -1,15 +1,18 @@
-
+/**
+ * Yadel Negash
+ * 02/23/2021
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class WordCount {
 	public static void main(String[] args) {
-		
+
 		File HarryPotFile = new File("src/harry_potter_2.txt");
 
 		Scanner fileInput = null;
-		
+
 		try {
 			fileInput = new Scanner(HarryPotFile);
 		} catch (FileNotFoundException e) {
@@ -19,11 +22,9 @@ public class WordCount {
 		}
 
 		int i = 0;
-		while (fileInput.hasNext())
-		{
+		while (fileInput.hasNext()) {
 			String name = fileInput.next();
-			if (name.equalsIgnoreCase("harry") || name.equalsIgnoreCase("potter"))
-			{
+			if (name.equalsIgnoreCase("harry") || name.equalsIgnoreCase("potter")) {
 				i++;
 				System.out.println(i);
 			}
