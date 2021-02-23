@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Profile {
 	private String _firstname, _lastname, _email, _major, _DOB;
-	
+
 	public Profile() {
 		File profileFile = new File("src/profile.txt");
 		Scanner fileInput;
@@ -17,10 +17,10 @@ public class Profile {
 			_DOB = fileInput.nextLine();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
-		System.out.println("file not found");
+			System.out.println("file not found");
 		}
 	}
-	
+
 	public String getFirstName() {
 		return _firstname;
 	}
@@ -61,16 +61,13 @@ public class Profile {
 		this._DOB = _DOB;
 	}
 
-
 	public void ViewProfile() {
 		System.out.println(_firstname);
 		System.out.println(_lastname);
 		System.out.println(_email);
 		System.out.println(_major);
-		System.out.println(_DOB);		
-		
-	}
-	
-}
-	
+		System.out.println(_DOB);
 
+	}
+
+}
